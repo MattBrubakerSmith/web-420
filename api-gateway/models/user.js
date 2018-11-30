@@ -4,7 +4,7 @@ var userSchema = new mongoose.Schema({
     password: String,
     email: String
 });
-module.exports = mongoose.model("User", userSchema);
+module.exports = User = mongoose.model("User", userSchema);
 module.exports.add = (user, callback) => {
     user.save(callback);
 }
